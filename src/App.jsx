@@ -1,5 +1,5 @@
 import './css/style.css'
-import Header from './components/header'
+import Header from './components/Header'
 import Apresentation from './components/Apresentation'
 import Icon from './components/Icon'
 

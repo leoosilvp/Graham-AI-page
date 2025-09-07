@@ -1,0 +1,23 @@
+.icon{
+    position: fixed;
+    display: flex;
+    bottom: 20px;
+    right: 20px;
+    background: #1e1e1e;
+    border-radius: 5px;
+    border: 1px solid var(--color-line);
+    transition: var(--transition);
+}
+
+.icon:hover{
+    background: #2d2d2d;
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px 2px #2d2d2dc1;
+}
+
+.icon img{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+}

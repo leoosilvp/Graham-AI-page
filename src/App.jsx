@@ -4,6 +4,7 @@ import Presentation from './components/Presentation'
 import ChangeIcon from './hooks/ChangeIcon'
 import Icon from './components/Icon'
 import imgInterface from './assets/img/interface.png'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
         </section>
       </section>
       <Icon />
+      <Footer />
     </>
   )
 }

@@ -27,6 +27,14 @@ body{
     overflow-x: hidden;
 }
 
+hr{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    width: 900px;
+    border: 1px solid #2727273f;
+}
+
 .content{
     display: flex;
     flex-direction: column;
@@ -46,7 +54,6 @@ body{
     backdrop-filter: blur(5px);
     border: 1px solid var(--color-line);
     border-radius: var(--border);
-    box-shadow: 0px 0px 10px 2px #000000cf;
     box-shadow: 0px 0px 20px 2px #ffffff11;
 }
 
@@ -100,4 +107,104 @@ body{
     height: 300px;
     border-radius: var(--border);
     border: 1px solid var(--color-line);
+}
+
+.api{
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.api img{
+    display: flex;
+    width: 500px;
+    border-radius: var(--border);
+}
+
+.text-ali-right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.text-ali-right h1{
+    justify-content: end;
+    display: flex;
+    font-size: 2.5rem;
+}
+
+.text-ali-right p{
+    margin-top: 10px;
+    display: flex;
+    text-align: justify;
+}
+
+.text-ali-right button{
+    margin-top: 60px;
+    width: 120px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.text-ali-right button:hover{
+    box-shadow: 0px 0px 20px 2px #f5f5f568;
+}
+
+.openai-anonymous{
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.openai-anonymous img{
+    display: flex;
+    justify-content: end;
+    border-radius: var(--border);
+    width: 500px;
+}
+
+.text-ali-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-ali-left h1{
+    justify-content: end;
+    display: flex;
+    font-size: 2.5rem;
+}
+
+.text-ali-left p{
+    margin-top: 10px;
+    display: flex;
+    text-align: justify;
+}
+
+.text-ali-left button{
+    margin-top: 60px;
+    width: 120px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.text-ali-left button:hover{
+    box-shadow: 0px 0px 20px 2px #f5f5f568;
 }

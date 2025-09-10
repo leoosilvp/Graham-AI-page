@@ -27,12 +27,40 @@ body{
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar{
+    display: flex;
+    width: 4px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #111111;
+    cursor: pointer;
+}
+
+body::-webkit-scrollbar-track{
+    background: #000;
+}
+
 hr{
     margin-top: 100px;
     margin-bottom: 100px;
     display: flex;
     width: 900px;
     border: 1px solid #2727273f;
+}
+
+@keyframes salt {
+    0%,20%,50%,80%,100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
 }
 
 .content{

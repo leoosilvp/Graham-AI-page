@@ -85,7 +85,7 @@ function App() {
         <hr />
         <section className='openai-anonymous'>
           <div className="text-ali-left">
-            <h1>OpenAI x Anonymous</h1>
+            <h1>OpenAI x Graham</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt architecto odio
               fugit. Laudantium itaque omnis quidem labore, incidunt est nisi sunt perferendis libero
               illo beatae dolorem rem quae voluptatum pariatur.</p>

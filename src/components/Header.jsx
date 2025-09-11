@@ -4,7 +4,7 @@ import '../css/header.css'
 function Header(){
   return (
     <header>
-        <a href="#"><img src={logo} alt="logo-anonymous" /></a>
+        <a href="#"><img src={logo} alt="logo-Graham" /></a>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>

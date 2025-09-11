@@ -1,9 +1,9 @@
 <div align="center">
 
-<img src="./src/assets/img/icon-light.svg" width="200px">
+<img src="./src/assets/img/logo-light.svg" width="200px">
 </div>
 
-access: [anonymous.ai](https://anonymous-ai-page.vercel.app/)
+access: [graham.ai](https://graham-ai-page.vercel.app/)
 
 <div align="center">
 

@@ -1,11 +1,11 @@
-import logo from '../assets/img/logo-light.png'
+import logo from '../assets/img/logo-light.svg'
 import '../css/footer.css'
 
 function Footer() {
     return (
         <footer>
             <div className="content-footer">
-                <div className="presentation-anonymous">
+                <div className="presentation-graham">
                     <img src={logo} />
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Laborum rerum blanditiis aut? Cumque repudiandae iusto 
@@ -25,7 +25,7 @@ function Footer() {
                 <div>
                     <nav>
                         <ul>
-                            <li><a href="#">Anonymous - chat</a></li>
+                            <li><a href="https://graham-ai-kappa.vercel.app/">Graham - chat</a></li>
                             <li><a href="#">Login</a></li>
                             <li><a href="#">Create account</a></li>
                             <li><a href="#">contribute</a></li>
@@ -55,7 +55,7 @@ function Footer() {
                     </nav>
                 </div>
             </div>
-            <p>Anonymous &copy;2025 - Todos os direitos reservados</p>
+            <p>GrahamAI &copy;2025 - Todos os direitos reservados</p>
         </footer>
     )
 }

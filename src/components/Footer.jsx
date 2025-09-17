@@ -7,9 +7,8 @@ function Footer() {
             <div className="content-footer">
                 <div className="presentation-graham">
                     <img src={logo} />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Laborum rerum blanditiis aut? Cumque repudiandae iusto 
-                        unde voluptate aut laboriosam.</p>
+                    <p>Graham is your new AI interface, designed to be powerful 
+                        and intuitive. Try it now and simplify your work.</p>
                 </div>
                 <div>
                     <nav>
@@ -55,7 +54,7 @@ function Footer() {
                     </nav>
                 </div>
             </div>
-            <p>GrahamAI &copy;2025 - Todos os direitos reservados</p>
+            <p>Graham-AI &copy; 2025</p>
         </footer>
     )
 }

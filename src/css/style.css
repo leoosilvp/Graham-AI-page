@@ -46,7 +46,7 @@ hr{
     margin-bottom: 100px;
     display: flex;
     width: 900px;
-    border: 1px solid #2727273f;
+    border: 1px solid #2727274c;
 }
 
 @keyframes salt {
@@ -77,7 +77,7 @@ hr{
     align-items: center;
     width: 900px;
     height: fit-content;
-    padding: 20px;
+    padding: 20px 20px 25px 20px;
     background: #0000009c;
     backdrop-filter: blur(5px);
     border: 1px solid var(--color-line);
@@ -114,12 +114,15 @@ hr{
 }
 
 .content-interface p{
-    display: flex;
-    color: #dadada;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #dedede;
 }
 
 .ctn-cards-interface{
     margin-top: 30px;
+    margin-bottom: 60px;
     display: flex;
     gap: 45px;
 }
@@ -130,11 +133,32 @@ hr{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px 30px;
+    padding: 25px 30px;
     width: 250px;
-    height: 300px;
+    min-height: fit-content;
+    max-height: 350px;
     border-radius: var(--border);
     border: 1px solid var(--color-line);
+}
+
+.card-interface p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.card-interface h2{
+    display: flex;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #dedede;
+}
+
+.card-interface h3{
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #dededebf;
 }
 
 .api{

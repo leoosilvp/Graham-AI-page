@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import logo from '../assets/img/logo-light.svg'
 import '../css/footer.css'
 
@@ -13,10 +14,10 @@ function Footer() {
                 <div>
                     <nav>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Documetation</a></li>
-                            <li><a href="#">Brain</a></li>
+                            <li><a><Link to="/">Home</Link></a></li>
+                            <li><a><Link to="/">About</Link></a></li>
+                            <li><a><Link to="/">Documetation</Link></a></li>
+                            <li><a><Link to="/">Brain</Link></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -24,10 +25,10 @@ function Footer() {
                 <div>
                     <nav>
                         <ul>
-                            <li><a href="https://graham-ai-kappa.vercel.app/">Graham - chat</a></li>
-                            <li><a href="#">Login</a></li>
-                            <li><a href="#">Create account</a></li>
-                            <li><a href="#">contribute</a></li>
+                            <li><a href="https://graham-ai-kappa.vercel.app/" target='_blank'>Graham - chat</a></li>
+                            <li><a href="https://graham-ai-kappa.vercel.app/" target='_blank'>Login</a></li>
+                            <li><a href="https://graham-ai-kappa.vercel.app/" target='_blank'>Create account</a></li>
+                            <li><a><Link to="/Contribute">contribute</Link></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -35,10 +36,10 @@ function Footer() {
                 <div>
                     <nav>
                         <ul>
-                            <li><a href="#">GitHub</a></li>
-                            <li><a href="#">Linkedin</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Portfólio</a></li>
+                            <li><a href="https://github.com/leoosilvp" target='_blank'>GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/leeosilvp/" target='_blank'>Linkedin</a></li>
+                            <li><a href="https://www.instagram.com/leeosilvp/" target='_blank'>Instagram</a></li>
+                            <li><a href="https://github.com/leoosilvp?tab=repositories" target='_blank'>Portfólio</a></li>
                         </ul>
                     </nav>
                 </div>

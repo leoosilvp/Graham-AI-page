@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import Header from '../components/Header'
 import Presentation from '../components/Presentation'
 import Footer from '../components/Footer'
+import InteractiveDemo from "../components/InteractiveDemo";
 
 import imgLoginInterface from '../assets/img/login-interface.png'
 import imgInterface from '../assets/img/interface.png'
@@ -31,6 +32,7 @@ function Home() {
             <Header />
             <section className="content">
                 <Presentation />
+                <InteractiveDemo />
                 <section className="interface">
                     <h1>Simplified Access</h1>
                     <h2>Simplified Login via GitHub. Just your username to get started.</h2>

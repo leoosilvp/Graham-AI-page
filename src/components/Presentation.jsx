@@ -7,7 +7,7 @@ function Presentation() {
                 <h1>Graham AI</h1>
                 <h2>Start building the future, today.</h2>
                 <a href='https://graham-ai-kappa.vercel.app/'>Start free, now!</a>
-                <i class="fa-solid fa-chevron-down arrow"></i>
+                <i className="fa-solid fa-chevron-down arrow"></i>
             </div>
         </section>
     )

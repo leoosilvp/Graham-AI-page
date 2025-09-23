@@ -28,7 +28,7 @@ function Footer() {
                             <li><a href="https://graham-ai-kappa.vercel.app/" target='_blank'>Graham - chat</a></li>
                             <li><a href="https://graham-ai-kappa.vercel.app/" target='_blank'>Login</a></li>
                             <li><a href="https://graham-ai-kappa.vercel.app/" target='_blank'>Create account</a></li>
-                            <li><a><Link to="/Contribute">contribute</Link></a></li>
+                            <li><Link to="/Contribute">contribute</Link></li>
                         </ul>
                     </nav>
                 </div>

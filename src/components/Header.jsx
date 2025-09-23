@@ -8,10 +8,10 @@ function Header(){
         <a><Link to='/'><img src={logo} alt="logo-Graham" /></Link></a>
         <nav>
             <ul>
-                <li><a><Link to='/'>Home</Link></a></li>
-                <li><a><Link to='/'>About</Link></a></li>
-                <li><a><Link to='/'>Documentation</Link></a></li>
-                <li><a><Link to='/'>Brain</Link></a></li>
+                <li><Link to='/'>Home</Link></li>
+                <li><Link to="/" state={{ scrollTo: "about" }}>About</Link></li>
+                <li><Link to="/" state={{ scrollTo: "colab" }}>Documentation</Link></li>
+                <li><Link to="/" state={{ scrollTo: "api" }}>Brain</Link></li>
             </ul>
         </nav>
     </header>

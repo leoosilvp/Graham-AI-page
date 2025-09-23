@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import logo from '../assets/img/logo-light.svg'
 import '../css/footer.css'
 
@@ -8,16 +8,16 @@ function Footer() {
             <div className="content-footer">
                 <div className="presentation-graham">
                     <img src={logo} />
-                    <p>Graham is your new AI interface, designed to be powerful 
+                    <p>Graham is your new AI interface, designed to be powerful
                         and intuitive. Try it now and simplify your work.</p>
                 </div>
                 <div>
                     <nav>
                         <ul>
-                            <li><a><Link to="/">Home</Link></a></li>
-                            <li><a><Link to="/">About</Link></a></li>
-                            <li><a><Link to="/">Documetation</Link></a></li>
-                            <li><a><Link to="/">Brain</Link></a></li>
+                            <li><Link to='/'>Home</Link></li>
+                            <li><Link to="/" state={{ scrollTo: "about" }}>About</Link></li>
+                            <li><Link to="/" state={{ scrollTo: "colab" }}>Documentation</Link></li>
+                            <li><Link to="/" state={{ scrollTo: "api" }}>Brain</Link></li>
                         </ul>
                     </nav>
                 </div>

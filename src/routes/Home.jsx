@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import Header from '../components/Header'
 import Presentation from '../components/Presentation'
 import Footer from '../components/Footer'
@@ -5,9 +8,24 @@ import Footer from '../components/Footer'
 import imgLoginInterface from '../assets/img/login-interface.png'
 import imgInterface from '../assets/img/interface.png'
 import Icon from '../components/Icon'
-import colab from '../assets/img/openai-anonymous.png'
+import colab from '../assets/img/deepseek-graham.png'
+import deepseek from '../assets/img/deepseek.png'
 
 function Home() {
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.state?.scrollTo) {
+            const section = document.getElementById(location.state.scrollTo);
+            if (section) {
+                section.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center",
+                });
+            }
+        }
+    }, [location]);
+
     return (
         <>
             <Header />
@@ -44,18 +62,17 @@ function Home() {
                     <img src={imgInterface} alt="interface" />
                 </section>
                 <hr />
-                <section className='api'>
-                    <a href="#"><img src="https://www.danstapub.com/wp-content/uploads/2025/02/tW68oW9kC2HcoeJv7YT3gc-1280-80.jpg" /></a>
+                <section className='api' id="api">
+                    <a href="https://www.deepseek.com/en" target='_blank'><img src={deepseek} /></a>
                     <div className="text-ali-right">
-                        <h1>API OpenAI</h1>
-                        <p>We leverage OpenAI's cutting-edge technology to ensure Graham has a robust foundation and
-                            world-class natural language processing power. This allows us to deliver more accurate, creative,
-                            and contextually relevant responses.</p>
-                        <button>Try now</button>
+                        <h1>API DeepSeek</h1>
+                        <p>We've integrated DeepSeek's cutting-edge models, recognized for their excellence in coding and logical reasoning,
+                            to give Graham a powerful and efficient foundation.</p>
+                        <a href="https://www.deepseek.com/en" target='_blank'>DeepSeek</a>
                     </div>
                 </section>
                 <hr />
-                <section className='about'>
+                <section className='about' id="about">
                     <h1>About</h1>
                     <div className="content-about">
                         <h2>In a world saturated with information, clarity is the greatest power. Graham was born from the need for a
@@ -73,15 +90,14 @@ function Home() {
                     </div>
                 </section>
                 <hr />
-                <section className='openai-anonymous'>
+                <section className='colab' id="colab">
                     <div className="text-ali-left">
-                        <h1>OpenAI x Graham</h1>
-                        <p>While OpenAI provides the engine, Graham builds the experience. We optimize and refine this powerful
-                            technology into an intuitive interface, unique features, and a workflow specifically designed to maximize
-                            your productivity.</p>
-                        <button>Learn more</button>
+                        <h1>DeepSeek x Graham</h1>
+                        <p>DeepSeek provides the high-performance open-source AI engine. Graham transforms this raw power into an exceptional
+                            user experience, with an intuitive interface and tools focused on maximizing your productivity.</p>
+                        <a href="https://graham-ai-kappa.vercel.app/" target='_blank'>Learn more</a>
                     </div>
-                    <a href="#"><img src={colab} /></a>
+                    <a href="https://graham-ai-kappa.vercel.app/" target='_blank'><img src={colab} /></a>
                 </section>
                 <hr />
             </section>

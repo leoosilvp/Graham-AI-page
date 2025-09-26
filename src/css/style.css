@@ -839,6 +839,14 @@ hr {
         width: 360px;
     }
 
+    .tab-buttons {
+        gap: 10px;
+    }
+
+    .tab-btn {
+        padding: 12px 14px;
+    }
+
     .use-case-example {
         padding: 15px;
     }

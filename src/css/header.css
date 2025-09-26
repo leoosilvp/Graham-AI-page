@@ -53,6 +53,7 @@ nav ul li a:hover {
 
 @media (width < 720px) {
     header {
+        margin-top: 15px;
         width: 360px;
     }
 

@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary-color: #1e1e1e;
     --secundary-color: #f5f5f5;
     --color-line: #282828;
@@ -7,7 +7,7 @@
 }
 
 
-header{
+header {
     margin: 30px auto;
     display: flex;
     justify-content: space-between;
@@ -20,23 +20,23 @@ header{
     box-shadow: 0px 0px 10px 2px #000000cf;
 }
 
-header img{
+header img {
     display: flex;
     width: 40px;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     display: flex;
     gap: 25px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     display: flex;
     color: #dedede;
@@ -44,9 +44,19 @@ nav ul li a{
     transition: var(--transition);
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     text-decoration: underline;
     text-decoration-style: dashed;
     text-underline-offset: 7px;
     color: #ffffff;
+}
+
+@media (width < 720px) {
+    header {
+        width: 390px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
 }

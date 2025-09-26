@@ -780,3 +780,76 @@ hr {
     color: #4ade80;
     margin: 0;
 }
+
+@media (width < 720px) {
+
+    .presentation {
+        text-align: center;
+        width: 390px;
+    }
+
+    hr {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 390px;
+    }
+
+    .interface {
+        width: 390px;
+    }
+
+    .interface img {
+        width: 95%;
+    }
+
+    .ctn-cards-interface {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .api {
+        width: 390px;
+    }
+
+    .api img {
+        display: none;
+    }
+
+    .about {
+        width: 390px;
+    }
+
+    .colab {
+        width: 390px;
+    }
+
+    .colab img {
+        display: none;
+    }
+
+    .use-cases {
+        width: 390px;
+    }
+
+    .testimonials {
+        width: 390px;
+    }
+
+    .comparison {
+        width: 390px;
+    }
+
+    .faq {
+        width: 390px;
+    }
+
+    .roadmap {
+        width: 390px;
+    }
+
+    .final-cta {
+        width: 390px;
+    }
+}

@@ -1,15 +1,15 @@
-footer{
+footer {
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-footer p{
+footer p {
     color: #d5d5d5;
 }
 
-.content-footer{
+.content-footer {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -19,29 +19,56 @@ footer p{
     padding: 25px;
 }
 
-.content-footer nav ul{
+.content-footer nav ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.content-footer nav ul li a{
+.content-footer nav ul li a {
     color: #d5d5d5;
 }
 
-.content-footer nav ul li a:hover{
+.content-footer nav ul li a:hover {
     color: #9b9b9b;
 }
 
-.content-footer img{
+.content-footer img {
     display: flex;
     width: 190px;
 }
 
-.presentation-graham{
+.presentation-graham {
     display: flex;
     flex-direction: column;
     width: 200px;
     gap: 13px;
     color: #d5d5d5;
+}
+
+
+@media (width < 720px) {
+
+    footer {
+        width: 390px;
+    }
+
+    .content-footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .content-footer nav ul {
+        margin-top: 30px;
+    }
+
+    .content-footer img {
+        width: 150px;
+    }
+
+    .presentation-graham {
+        width: 150px;
+        text-align: justify;
+    }
 }

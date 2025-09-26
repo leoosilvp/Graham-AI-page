@@ -50,7 +50,7 @@ footer p {
 @media (width < 720px) {
 
     footer {
-        width: 390px;
+        width: 100%;
     }
 
     .content-footer {
@@ -63,12 +63,12 @@ footer p {
         margin-top: 30px;
     }
 
-    .content-footer img {
-        width: 150px;
-    }
-
     .presentation-graham {
         width: 150px;
         text-align: justify;
+    }
+
+    .presentation-graham p{
+        display: none;
     }
 }

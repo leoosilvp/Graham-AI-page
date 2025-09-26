@@ -299,6 +299,19 @@
 @media (width < 720px) {
 
     .interactive-demo {
-        width: 390px;
+        width: 360px;
     }
+
+    .demo-container {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none;
+        min-height: 300px;
+    }
+
+    .demo-submit {
+        width: 100%;
+    }
+
 }

@@ -53,10 +53,10 @@ nav ul li a:hover {
 
 @media (width < 720px) {
     header {
-        width: 390px;
+        width: 360px;
     }
 
     nav ul {
-        gap: 15px;
+        gap: 7px;
     }
 }

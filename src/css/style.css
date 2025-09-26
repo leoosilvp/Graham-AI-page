@@ -783,23 +783,29 @@ hr {
 
 @media (width < 720px) {
 
+    body {
+        align-items: center;
+        justify-content: center;
+    }
+
     .presentation {
         text-align: center;
-        width: 390px;
+        width: 360px;
     }
 
     hr {
         margin-top: 50px;
         margin-bottom: 50px;
-        width: 390px;
+        width: 80%;
     }
 
     .interface {
-        width: 390px;
+        padding: 15px;
+        width: 360px;
     }
 
     .interface img {
-        width: 95%;
+        width: 85%;
     }
 
     .ctn-cards-interface {
@@ -810,7 +816,7 @@ hr {
     }
 
     .api {
-        width: 390px;
+        width: 360px;
     }
 
     .api img {
@@ -818,11 +824,11 @@ hr {
     }
 
     .about {
-        width: 390px;
+        width: 360px;
     }
 
     .colab {
-        width: 390px;
+        width: 360px;
     }
 
     .colab img {
@@ -830,26 +836,48 @@ hr {
     }
 
     .use-cases {
-        width: 390px;
+        width: 360px;
+    }
+
+    .use-case-example {
+        padding: 15px;
     }
 
     .testimonials {
-        width: 390px;
+        width: 360px;
     }
 
     .comparison {
-        width: 390px;
+        width: 360px;
     }
 
     .faq {
-        width: 390px;
+        width: 360px;
     }
 
     .roadmap {
-        width: 390px;
+        width: 360px;
+    }
+
+    .roadmap-section {
+        padding: 15px;
     }
 
     .final-cta {
-        width: 390px;
+        width: 360px;
+    }
+
+    .cta-content {
+        padding: 50px 10px;
+    }
+
+    .cta-buttons {
+        gap: 15px;
+    }
+
+    .cta-primary,
+    .cta-secondary {
+        padding: 15px 20px;
+        min-width: 60px;
     }
 }

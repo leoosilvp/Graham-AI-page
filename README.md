@@ -5,7 +5,3 @@
 
 access: [graham.ai](https://graham-ai-page.vercel.app/)
 
-<div align="center">
-
-```🚧⚠️ projeto em desenvolvimento.🚧```
-</div>

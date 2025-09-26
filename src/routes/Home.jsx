@@ -310,12 +310,12 @@ if __name__ == "__main__":
                                     <td><span className="cross">❌</span></td>
                                 </tr>
                                 <tr>
-                                    <td>Open Source</td>
+                                    <td>Data Anonymization</td>
                                     <td><span className="check">✅</span></td>
                                     <td><span className="partial">🟡</span></td>
                                 </tr>
                                 <tr>
-                                    <td>Portuguese Support</td>
+                                    <td>Dynamic Contextual Engagement</td>
                                     <td><span className="check">✅</span></td>
                                     <td><span className="partial">🟡</span></td>
                                 </tr>
@@ -365,7 +365,7 @@ if __name__ == "__main__":
                                 <span className="faq-toggle">+</span>
                             </div>
                             <div className="faq-answer">
-                                <p>Absolutely! Graham is designed to seamlessly integrate with your existing workflow. We support integration with GitHub, VS Code, and many other popular development tools.</p>
+                                <p>Graham's integration with other tools is not yet available. However, this is one of our next planned features, aiming to allow Graham to integrate in the future with platforms like GitHub, VS Code, and many other popular development tools, enhancing your workflow.</p>
                             </div>
                         </div>
 

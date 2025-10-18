@@ -28,7 +28,7 @@ function Footer() {
                             <li><a href="https://graham-ai-kappa.vercel.app/" target='_blank'>Graham - chat</a></li>
                             <li><a href="https://graham-ai-kappa.vercel.app/" target='_blank'>Login</a></li>
                             <li><a href="https://graham-ai-kappa.vercel.app/" target='_blank'>Create account</a></li>
-                            <li><Link to="/Contribute">contribute</Link></li>
+                            <li><a href="https://graham-ai-kappa.vercel.app/" target='_blank'>Profile</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -36,10 +36,10 @@ function Footer() {
                 <div>
                     <nav>
                         <ul>
-                            <li><a href="https://github.com/leoosilvp" target='_blank'>GitHub</a></li>
                             <li><a href="https://www.linkedin.com/in/leeosilvp/" target='_blank'>Linkedin</a></li>
                             <li><a href="https://www.instagram.com/leeosilvp/" target='_blank'>Instagram</a></li>
-                            <li><a href="https://github.com/leoosilvp?tab=repositories" target='_blank'>Portfólio</a></li>
+                            <li><a href="">twitter</a></li>
+                            <li><a href="https://github.com/leoosilvp" target='_blank'>GitHub</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -47,10 +47,10 @@ function Footer() {
                 <div>
                     <nav>
                         <ul>
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Contact-us</a></li>
-                            <li><a href="#">Community</a></li>
-                            <li><a href="#">Dev</a></li>
+                            <li><a href="">Support</a></li>
+                            <li><a href="">Contact-us</a></li>
+                            <li><a href="">Community</a></li>
+                            <li><a href="">Contribute</a></li>
                         </ul>
                     </nav>
                 </div>

@@ -12,6 +12,7 @@ import imgInterface from '../assets/img/interface.png'
 import Icon from '../components/Icon'
 import colab from '../assets/img/deepseek-graham.png'
 import deepseek from '../assets/img/deepseek.png'
+import Plans from "../components/Plans";
 
 function Home() {
     const location = useLocation();
@@ -154,6 +155,24 @@ if __name__ == "__main__":
 
                 <hr />
 
+                <section className="plans" id="plans">
+                    <h1>Plans</h1>
+                    <h2>Choose the plan that unlocks your full creative potential.</h2>
+                    <Plans />
+                    <section className='sec-payment-methods'>
+                        <div className="pay-met">
+                            <i className='fa-solid fa-credit-card'></i>
+                            <i className='fa-brands fa-paypal'></i>
+                            <i className='fa-brands fa-pix'></i>
+                            <i className='fas fa-coins'></i>
+                        </div>
+                        <h2>Pay by credit card in up to 12x, PayPal or Pix</h2>
+                        <h3>We guarantee free cancellation within 7 days</h3>
+                    </section>
+                </section>
+
+                <hr />
+
                 <section className="interface">
                     <h1>Simplified Access</h1>
                     <h2>Simplified Login via GitHub. Just your username to get started.</h2>
@@ -274,7 +293,7 @@ if __name__ == "__main__":
                         </div>
                     </div>
                 </section>
-                
+
                 <hr />
 
                 <section className='comparison' id="comparison">

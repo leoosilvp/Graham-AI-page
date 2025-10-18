@@ -10,8 +10,8 @@ function Header(){
             <ul>
                 <li><Link to='/'>Home</Link></li>
                 <li><Link to="/" state={{ scrollTo: "about" }}>About</Link></li>
+                <li><Link to="/" state={{ scrollTo: "plans" }}>Plans</Link></li>
                 <li><Link to="/" state={{ scrollTo: "colab" }}>Documentation</Link></li>
-                <li><Link to="/" state={{ scrollTo: "api" }}>Brain</Link></li>
             </ul>
         </nav>
     </header>

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 
 import Header from '../components/Header'
@@ -16,25 +16,57 @@ import Plans from "../components/Plans";
 
 function Home() {
     const location = useLocation();
+    const hasScrolledRef = useRef(false);
 
     useInteractions();
 
+    const scrollToPosition = (targetTop, duration = 1500) => {
+        const start = window.scrollY;
+        const distance = targetTop - start;
+        let startTime = null;
+
+        const easeInOutQuad = (t) =>
+            t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+
+        const animation = (currentTime) => {
+            if (!startTime) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / duration, 1);
+            window.scrollTo(0, start + distance * easeInOutQuad(progress));
+            if (progress < 1) requestAnimationFrame(animation);
+        };
+
+        requestAnimationFrame(animation);
+    };
+
     useEffect(() => {
-        if (location.state?.scrollTo) {
-            const section = document.getElementById(location.state.scrollTo);
-            if (section) {
-                section.scrollIntoView({
-                    behavior: "smooth",
-                    block: "center",
-                });
+        if (location.state?.scrollTo && !hasScrolledRef.current) {
+            const element = document.getElementById(location.state.scrollTo);
+            if (!element) return;
+
+            const viewportHeight = window.innerHeight;
+            const elementTop = element.offsetTop;
+            const elementHeight = element.offsetHeight;
+
+            let top;
+            if (elementHeight > viewportHeight) {
+                top = elementTop - 60;
+            } else {
+                top = elementTop - viewportHeight / 2 + elementHeight / 2;
             }
+
+            scrollToPosition(top, 1500);
+
+            hasScrolledRef.current = true;
+
+            window.history.replaceState({}, document.title);
         }
     }, [location]);
 
     return (
         <>
             <Header />
-            <section className="content">
+            <section className="content" id="home">
                 <Presentation />
                 <InteractiveDemo />
 
@@ -158,16 +190,18 @@ if __name__ == "__main__":
                 <section className="plans" id="plans">
                     <h1>Plans</h1>
                     <h2>Choose the plan that unlocks your full creative potential.</h2>
-                    <Plans />
-                    <section className='sec-payment-methods'>
-                        <div className="pay-met">
-                            <i className='fa-solid fa-credit-card'></i>
-                            <i className='fa-brands fa-paypal'></i>
-                            <i className='fa-brands fa-pix'></i>
-                            <i className='fas fa-coins'></i>
-                        </div>
-                        <h2>Pay by credit card in up to 12x, PayPal or Pix</h2>
-                        <h3>We guarantee free cancellation within 7 days</h3>
+                    <section className="content-plans">
+                        <Plans />
+                        <section className='sec-payment-methods'>
+                            <div className="pay-met">
+                                <i className='fa-solid fa-credit-card'></i>
+                                <i className='fa-brands fa-paypal'></i>
+                                <i className='fa-brands fa-pix'></i>
+                                <i className='fas fa-coins'></i>
+                            </div>
+                            <h2>Pay by credit card in up to 12x, PayPal or Pix</h2>
+                            <h3>We guarantee free cancellation within 7 days</h3>
+                        </section>
                     </section>
                 </section>
 

@@ -9,7 +9,6 @@ const useInteractions = () => {
             
             initializeScrollAnimations();
             
-            initializeSmoothScrolling();
         }, 100);
 
         return () => clearTimeout(timer);
@@ -77,33 +76,13 @@ const useInteractions = () => {
             });
         }, observerOptions);
 
-        const animatedElements = document.querySelectorAll('.testimonial-card, .roadmap-section, .use-case-example, .comparison-table');
+        const animatedElements = document.querySelectorAll('.interactive-demo, .interface, .ctn-cards-interface, .api, .about, .colab, .faq-container, .sec-payment-methods, .content-plans, .testimonial-card, .roadmap-section, .use-case-example, .comparison-table, .final-cta');
         
         animatedElements.forEach(element => {
             element.style.opacity = '0';
             element.style.transform = 'translateY(30px)';
             element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(element);
-        });
-    };
-
-    const initializeSmoothScrolling = () => {
-        const internalLinks = document.querySelectorAll('a[href^="#"]');
-        
-        internalLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-                
-                if (targetElement) {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
         });
     };
 };

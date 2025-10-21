@@ -1,28 +1,29 @@
-.plans{
+.plans {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.plans h1{
+.plans h1 {
     margin-bottom: 10px;
     font-size: 2rem;
 }
 
-.plans h2{
+.plans h4 {
     margin-bottom: 30px;
     font-size: 1.3rem;
     color: #a8a8a8;
 }
 
-.ctn-plans{
+.ctn-plans {
     margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 900px;
 }
 
-.plan{
+.plan {
     display: flex;
     flex-direction: column;
     width: 420px;
@@ -32,13 +33,13 @@
     border-radius: var(--border);
 }
 
-.plan h1{
+.plan h1 {
     display: flex;
     font-size: 2rem;
     font-weight: 600;
 }
 
-.plan h3{
+.plan h3 {
     margin: 15px 0;
     display: flex;
     font-size: 0.9rem;
@@ -47,11 +48,11 @@
     gap: 5px;
 }
 
-.plan h3 span{
+.plan h3 span {
     color: #fff;
 }
 
-.plan h2{
+.plan h2 {
     margin-bottom: 0;
     margin-top: 25px;
     font-size: 1rem;
@@ -59,7 +60,7 @@
     color: #f5f5f5;
 }
 
-.price{
+.price {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -68,7 +69,7 @@
     background: #101010;
 }
 
-.price h1{
+.price h1 {
     margin-left: 10px;
     display: flex;
     align-items: center;
@@ -77,12 +78,12 @@
     color: #d7d7d7be;
 }
 
-.price h1 span{
+.price h1 span {
     font-size: 2.5rem;
     color: #ffffff;
 }
 
-.price h2{
+.price h2 {
     margin-bottom: 0;
     margin-top: 10px;
     font-size: 0.8rem;
@@ -90,7 +91,7 @@
     color: #d2d2d2;
 }
 
-.plan button{
+.plan button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,21 +107,21 @@
     transition: var(--transition);
 }
 
-.plan button:hover{
+.plan button:hover {
     transform: scale(0.98);
     color: #000000;
     background: #fff;
     border: none;
 }
 
-.plan .active{
+.plan .active {
     color: #000000;
     background: #fff;
     border: none;
     cursor: not-allowed;
 }
 
-.plan .ul{
+.plan .ul {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -128,11 +129,11 @@
     padding: 5px 0;
 }
 
-.plan .ul li i{
+.plan .ul li i {
     color: #0049b7;
 }
 
-.plan .ul li{
+.plan .ul li {
     display: flex;
     margin-top: 20px;
     width: 100%;
@@ -142,14 +143,14 @@
     color: #d2d2d2;
 }
 
-.sec-payment-methods{
+.sec-payment-methods {
     margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.sec-payment-methods h2{
+.sec-payment-methods h2 {
     margin-top: 15px;
     margin-bottom: 0;
     font-size: 1.2rem;
@@ -157,16 +158,36 @@
     font-weight: 500;
 }
 
-.sec-payment-methods h3{
+.sec-payment-methods h3 {
     margin-top: 3px;
     font-size: 0.9rem;
     font-weight: 500;
     color: #8d8d8d;
 }
 
-.pay-met{
+.pay-met {
     display: flex;
     justify-content: center;
     gap: 10px;
     font-size: 1.3rem;
+}
+
+@media (width < 720px) {
+
+    .plans h4{
+        font-size: 1.2rem;
+        display: flex;
+        text-align: center;
+    }
+
+    .ctn-plans {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .plan{
+        width: 90%;
+    }
 }

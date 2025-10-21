@@ -112,7 +112,7 @@ hr {
 .interface img {
     display: flex;
     width: 850px;
-    border-radius: var(--border);
+    border-radius: 7px;
     border: 1px solid var(--color-line);
 }
 
@@ -147,7 +147,7 @@ hr {
     width: 250px;
     min-height: fit-content;
     max-height: 350px;
-    border-radius: var(--border);
+    border-radius: 7px;
     border: 1px solid var(--color-line);
 }
 

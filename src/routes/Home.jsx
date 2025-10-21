@@ -189,7 +189,7 @@ if __name__ == "__main__":
 
                 <section className="plans" id="plans">
                     <h1>Plans</h1>
-                    <h2>Choose the plan that unlocks your full creative potential.</h2>
+                    <h4>Choose the plan that unlocks your full creative potential.</h4>
                     <section className="content-plans">
                         <Plans />
                         <section className='sec-payment-methods'>

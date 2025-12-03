@@ -25,10 +25,10 @@ function Footer() {
                 <div>
                     <nav>
                         <ul>
-                            <li><a href="https://graham-ai-kappa.vercel.app/" target='_blank'>Graham - chat</a></li>
-                            <li><a href="https://graham-ai-kappa.vercel.app/" target='_blank'>Login</a></li>
-                            <li><a href="https://graham-ai-kappa.vercel.app/" target='_blank'>Create account</a></li>
-                            <li><a href="https://graham-ai-kappa.vercel.app/" target='_blank'>Profile</a></li>
+                            <li><a href="https://ai-graham.vercel.app/" target='_blank'>Graham - chat</a></li>
+                            <li><a href="https://ai-graham.vercel.app/login" target='_blank'>Login</a></li>
+                            <li><a href="https://ai-graham.vercel.app/login" target='_blank'>Create account</a></li>
+                            <li><a href="https://ai-graham.vercel.app/settings/account" target='_blank'>Profile</a></li>
                         </ul>
                     </nav>
                 </div>

@@ -14,10 +14,10 @@ function Footer() {
                 <div>
                     <nav>
                         <ul>
-                            <li><Link to='/'>Home</Link></li>
-                            <li><Link to="/" state={{ scrollTo: "about" }}>About</Link></li>
-                            <li><Link to="/" state={{ scrollTo: "colab" }}>Documentation</Link></li>
-                            <li><Link to="/" state={{ scrollTo: "api" }}>Brain</Link></li>
+                            <li><Link to='/' onClick={() => window.location.reload()} >Home</Link></li>
+                            <li><Link onClick={() => window.location.reload()} state={{ scrollTo: "about" }}>About</Link></li>
+                            <li><Link onClick={() => window.location.reload()} state={{ scrollTo: "plans" }}>Plans</Link></li>
+                            <li><Link onClick={() => window.location.reload()} state={{ scrollTo: "colab" }}>Documentation</Link></li>
                         </ul>
                     </nav>
                 </div>
@@ -47,15 +47,15 @@ function Footer() {
                 <div>
                     <nav>
                         <ul>
-                            <li><a href="">Support</a></li>
-                            <li><a href="">Contact-us</a></li>
+                            <li><a href="https://ai-graham.vercel.app/settings/support">Support</a></li>
+                            <li><a href="https://ai-graham.vercel.app/settings/support">Contact-us</a></li>
                             <li><a href="">Community</a></li>
                             <li><a href="">Contribute</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
-            <p>Graham-AI &copy; 2025</p>
+            <p>Graham AI &copy; 2025</p>
         </footer>
     )
 }

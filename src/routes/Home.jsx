@@ -41,27 +41,36 @@ function Home() {
 
     useEffect(() => {
         if (location.state?.scrollTo && !hasScrolledRef.current) {
-            const element = document.getElementById(location.state.scrollTo);
-            if (!element) return;
 
-            const viewportHeight = window.innerHeight;
-            const elementTop = element.offsetTop;
-            const elementHeight = element.offsetHeight;
+            const scrollWhenReady = () => {
+                const element = document.getElementById(location.state.scrollTo);
+                if (!element) return;
 
-            let top;
-            if (elementHeight > viewportHeight) {
-                top = elementTop - 60;
-            } else {
-                top = elementTop - viewportHeight / 2 + elementHeight / 2;
-            }
+                const viewportHeight = window.innerHeight;
+                const elementTop = element.offsetTop;
+                const elementHeight = element.offsetHeight;
 
-            scrollToPosition(top, 1500);
+                let top;
+                if (elementHeight > viewportHeight) {
+                    top = elementTop - 60;
+                } else {
+                    top = elementTop - viewportHeight / 2 + elementHeight / 2;
+                }
 
-            hasScrolledRef.current = true;
+                scrollToPosition(top, 1500);
 
-            window.history.replaceState({}, document.title);
+                hasScrolledRef.current = true;
+                window.history.replaceState({}, document.title);
+            };
+
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    setTimeout(scrollWhenReady, 50);
+                });
+            });
         }
     }, [location]);
+
 
     return (
         <>

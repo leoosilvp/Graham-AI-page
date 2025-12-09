@@ -9,9 +9,9 @@ function Header(){
         <nav>
             <ul>
                 <li><Link to='/' onClick={() => window.location.reload()}>Home</Link></li>
-                <li><Link state={{ scrollTo: "about" }} onClick={() => window.location.reload()} >About</Link></li>
-                <li><Link state={{ scrollTo: "plans" }} onClick={() => window.location.reload()} >Plans</Link></li>
-                <li><Link state={{ scrollTo: "colab" }} onClick={() => window.location.reload()} >Documentation</Link></li>
+                <li><Link state={{ scrollTo: "about" }}>About</Link></li>
+                <li><Link state={{ scrollTo: "plans" }}>Plans</Link></li>
+                <li><Link state={{ scrollTo: "colab" }}>Documentation</Link></li>
             </ul>
         </nav>
     </header>
